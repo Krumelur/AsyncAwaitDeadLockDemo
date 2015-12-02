@@ -10,6 +10,13 @@ using System.Threading.Tasks;
 
 namespace LockTest
 {
+	// My favorite links about async/await:
+	// - Async and Await http://blog.stephencleary.com/2012/02/async-and-await.html
+	// - StartNew is Dangerous http://blog.stephencleary.com/2013/08/startnew-is-dangerous.html
+	// - Don't Block on Async Code http://blog.stephencleary.com/2012/07/dont-block-on-async-code.html
+	// - What is the SynchronizationContext? http://www.codeproject.com/Articles/31971/Understanding-SynchronizationContext-Part-I
+	// - No SynchronizationContext in Console Apps - http://blogs.msdn.com/b/pfxteam/archive/2012/01/20/10259049.aspx
+
 	[TestFixture]
 	public class MyTests
 	{
@@ -70,8 +77,8 @@ namespace LockTest
 			//        All code following from here on will be executed within the captured context (calling the Post() method on the SynchronizationContext), but the problem is:
 			//        the UI thread is blocked! It is using Task.Wait() to wait for this async operation to finish, so it cannot execute our code => deadlock.
 
-			//     - Runnung on the thread pool if configureAwait == false.
-			//        We essentially tell compiler: "we don't need the context to be captured! There is no need to execute whatever comes here on the UI thread!"
+			//     - Running on the thread pool if configureAwait == false.
+			//        We essentially tell the compiler: "we don't need the context to be captured! There is no need to execute whatever comes here on the UI thread!"
 			//        That's fine as ong we don't perform UI related work and for example just use Console.WriteLine().
 			Console.WriteLine("Task awaited");
 
