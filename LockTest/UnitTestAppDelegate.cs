@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 namespace LockTest
 {
 	// My favorite links about async/await:
+	// - Lucian Wischik "6 tips for async and await": https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async
 	// - Async and Await http://blog.stephencleary.com/2012/02/async-and-await.html
 	// - StartNew is Dangerous http://blog.stephencleary.com/2013/08/startnew-is-dangerous.html
 	// - Don't Block on Async Code http://blog.stephencleary.com/2012/07/dont-block-on-async-code.html
