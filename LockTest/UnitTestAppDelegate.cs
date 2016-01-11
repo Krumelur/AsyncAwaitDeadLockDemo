@@ -12,6 +12,9 @@ namespace LockTest
 {
 	// My favorite links about async/await:
 	// - Lucian Wischik "6 tips for async and await": https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async
+    // - "Should I expose synchronous wrappers for asynchronous methods"
+    //   and "how to satisfy a synchronous contract with async methods" by Stephen Toub:
+    //   http://blogs.msdn.com/b/pfxteam/archive/2012/04/13/10293638.aspx
 	// - Async and Await http://blog.stephencleary.com/2012/02/async-and-await.html
 	// - StartNew is Dangerous http://blog.stephencleary.com/2013/08/startnew-is-dangerous.html
 	// - Don't Block on Async Code http://blog.stephencleary.com/2012/07/dont-block-on-async-code.html
